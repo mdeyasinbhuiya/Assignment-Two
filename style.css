@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:  "Quicksand", serif;
+}
+/* shared class */
+
+
+/* navbar start*/
+
+.navbar{
+    width: 75vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logo h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    gap:35px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.link-1{
+    color: orange;
+}
+.link-2{
+    color: skyblue;
+}
+.link-3{
+    color: #05D4DF;
+}
+.link-4{
+    color: #5D58EF;
+}
+.contact{
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 60px;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 12px;
+}
+.menu{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    /* text-align: center;
+    align-items: center;
+    align-content: center; */
+}
+.hide-on-decstop{
+    display: none;
+}
+header hr{
+    color: orange;
+}
+
+@media screen and (max-width:576px) {
+    .navbar{
+        width: 90vw;
+    }
+    .hide-on-mobile{
+      display: none;
+    }
+    .hide-on-decstop{
+        display: block;
+    }
+}
+@media screen and (max-width:992px) and (min-width:576px) {
+    .navbar{
+        flex-direction: column;
+        /* width: 90vw; */
+    }
+    header button{
+        display: none;
+        gap: 100px;
+    }
+    .navbar ul{
+        gap:50px;
+        margin-top: 10px;
+    }
+    
+}
+
+/* navbar complete */
+/* banner section start from here */
+
+.banner{
+    display: flex;
+    width: 75vw;
+    margin: 10px auto 0px;
+    align-items: center;
+    gap: 50px;
+}
+.banner-content{
+    width: 640px
+}
+.banner-title{
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+.banner-pic img{
+    width: 100%;
+}
+.orange{
+    color: orange;
+}
+.sky-blue{
+    color: skyblue;
+}
+.banner-description{
+    font-size: 1.25rem;
+    margin-bottom: 24px;
+}
+.banner-btn{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 10px 47px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column-reverse;
+        width: 90vw;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .banner-content{
+        width: 90vw;
+    }
+    .banner-title{
+        font-size:2rem ;
+        font-weight: bold;
+    }
+    .banner-description{
+        font-size: 0.87rem;
+        font-weight: 500;
+        margin-bottom: 18px;
+
+    }
+    .banner-btn{
+        font-size: 1rem;
+        padding: 6px 24px;
+    }
+}
+@media screen and (max-width:992px) and (min-width:576px) {
+    .banner{
+        flex-direction: column-reverse;
+        width: 90vw;
+        text-align: center;
+        margin-bottom: 40px;
+        height: auto;
+    }
+    .banner-content{
+        width: 90vw;
+    }
+    .banner-btn{
+        display: block;
+        margin: auto;
+    }
+
+}
+
+/* header section complete */
