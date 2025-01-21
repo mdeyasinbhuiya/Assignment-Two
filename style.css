@@ -192,7 +192,7 @@ header hr{
         margin-bottom: 18px;
 
     }
-    .banner-btn{
+    .primary-btn{
         font-size: 1rem;
         padding: 6px 24px;
     }
@@ -208,7 +208,7 @@ header hr{
     .banner-content{
         width: 90vw;
     }
-    .banner-btn{
+    .primary-btn{
         display: block;
         margin: auto;
     }
@@ -315,7 +315,7 @@ main{
 
 @media screen and (max-width:576px){
     .curriculam{
-        width: 90vw;
+        width: 100vw;
     }
     .curriculum-card-container{
         grid-template-columns: repeat(1,1fr);
@@ -324,6 +324,11 @@ main{
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 25px;
+    }
+    .curriculum-card{
+        width: 80vw;
+        padding: 15px;
+        margin-left: -25px;
     }
     .curriculum-card .card-title{
         font-size: 1.2rem;
@@ -451,7 +456,8 @@ main{
         margin-bottom: 30px;
     }
     .story-card-title{
-        padding: 11px 23px 17px;
+        padding: 0px 15px 10px;
+        font-size: 14px;
     }
     .our-story{
         font-size: 2rem;
