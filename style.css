@@ -399,20 +399,21 @@ main{
     font-weight: bold;
     margin-bottom:50px ;
 }
-#card-1 button{
+#card-1 .date{
     background-color: #3CD8E8;
     padding: 15px 19px;
+    width: max-content;
 }
-#card-2 button , #card-6 button{
+#card-2 .date , #card-6 .date{
     background-color: #95B226;
 }
-#card-3 button, #card-7 button{
+#card-3 .date, #card-7 .date{
     background-color: #5D58F0;
 }
-#card-4 button{
+#card-4 .date {
     background-color: rgb(254, 47, 47);
 }
-#card-5 button{
+#card-5 .date {
     background-color: #666666;
 }
 .card-1-content p{
@@ -432,7 +433,7 @@ main{
     color: white;
     font-size: 1rem;
     font-weight: 500;
-    border: none;
+    width: max-content;
     padding: 10px 19px;
     border-radius: 50px;
     position:relative;
