@@ -52,6 +52,12 @@ body{
     text-decoration: none;
     font-size: 1.25rem;
     font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: background-color 0.5s;
+}
+.navbar a:hover{
+    background-color: #66666631;
 }
 .link-1{
     color: orange;
@@ -73,6 +79,12 @@ body{
     background-color: orange;
     border: none;
     border-radius: 12px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+.contact:hover{
+    background-color: rgb(255, 140, 0);
+    transform: scale(1.1);
 }
 .menu{
     background: transparent;
@@ -154,6 +166,10 @@ header hr{
     font-weight: bold;
     padding: 10px 47px;
     cursor: pointer;
+    transition: transform 1s;
+}
+.primary-btn:hover{
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:576px) {
@@ -275,13 +291,26 @@ main{
     border: none;
     font-weight: bold;
     cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: background-color 0.5s;
+}
+.card-btn:hover{
+    background-color: #66666631;
 }
 .arrow{
     background-color: orange;
-    padding: 24px 20px 20px 26px;
+    padding: 18px 14px 14px 20px;
     border-radius: 50%;
     border: none;
-    
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+.back:hover{
+    transform: translate(-5px);
+}
+.forward:hover{
+    transform: translate(5px);
 }
 
 @media screen and (max-width:576px){
@@ -348,6 +377,10 @@ main{
 .story-card{
     background-color: white;
     border-radius: 16px;
+    transition: transform 1s ;
+}
+.story-card:hover{
+    transform: scale(1.03);
 }
 .story-card img{
     width: 100%;
@@ -461,13 +494,13 @@ main{
     color: white;
     background-color: #01ACFD;
     height: auto;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 marquee{
   font-size: 1.5rem;
   font-weight: 600;
   font-family: "Raleway", serif;
-  /* border-top: 5px solid rgba(255, 255, 255, 0.3); */
+  
   border-bottom: 5px dashed rgba(255, 255, 255, 0.3);
   width: 80%;
   padding-bottom: 10px;
@@ -538,6 +571,9 @@ marquee{
     .keep-in-touch h3{
         margin-bottom: 36px;
     }
+    .commitment{
+        width: 90vw;
+    }
 }
 @media screen and (max-width:992px) and (min-width:576px){
     .footer-container{
@@ -546,3 +582,6 @@ marquee{
 }
 
 /* footer section complete here */
+.hide{
+    display: none;
+}
