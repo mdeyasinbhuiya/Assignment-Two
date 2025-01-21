@@ -550,14 +550,14 @@ marquee{
     font-size: 1.25rem;
     font-weight: 500;
 }
-.about-us li {
+.about-link {
    width: max-content;
     padding: 5px 10px;
     border-radius: 50px;
     cursor:pointer;
     transition: background-color 0.5s , transform 0.4s;
 }
-.about-us li:hover{
+.about-link:hover{
     background-color: #6666661b;
     transform: scale(1.25);
 }
