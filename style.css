@@ -433,13 +433,13 @@ main{
     color: white;
     font-size: 1rem;
     font-weight: 500;
-    width: max-content;
     padding: 10px 19px;
     border-radius: 50px;
     position:relative;
     left: 38px;
     bottom: 25px;
     font-family: "Raleway", serif;
+    border: none;
 }
 .story-btn{
    text-align: center;
@@ -471,7 +471,8 @@ main{
         font-weight: 500;
         line-height: 14px;
         left: 20px;
-        bottom: 20px;
+        bottom: 17px;
+        padding: 5px 10px;
     }
     
 }
@@ -486,10 +487,19 @@ main{
         left: 20px; 
         padding: 10px 10px;
         bottom: 20px;
+        
     }
     .story-card-title{
         padding: 11px 23px 17px;
     }
+}
+@media screen and (max-width:1400px) and (min-width:992px){
+  .date{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 10px 10px;
+  }
 }
 
 /* story section complete */
